@@ -1,0 +1,93 @@
+/* Sticky Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+    /* Default transparent background */
+    box-shadow: none;
+}
+
+.sticky-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Solid background when scrolled */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add shadow when scrolled */
+}
+
+.sticky-header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.sticky-header .header-logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.sticky-header .company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.sticky-header .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.sticky-header .sticky-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.sticky-header .sticky-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.sticky-header .sticky-menu a:hover {
+    color: #ff6200;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    .sticky-header .menu-toggle {
+        display: block;
+    }
+
+    .sticky-header .sticky-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .sticky-header .sticky-menu.open {
+        display: flex;
+    }
+
+    .sticky-header .sticky-menu a {
+        text-align: center;
+        padding: 10px 0;
+    }
+}

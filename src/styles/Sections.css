@@ -1,0 +1,31 @@
+/* Sections */
+.services-section,
+.about-section,
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f3f4f6, #dfe3e8);
+    color: #333;
+}
+
+
+.services-section h2,
+.about-section h2,
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    background: #02272d;
+    color: white;
+}
+
+.contact-section {
+    background: #111;
+    color: white;
+}
