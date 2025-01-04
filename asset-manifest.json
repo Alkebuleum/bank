@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Alkebuleum/bank.git/static/css/main.09ea701b.css",
+    "main.js": "/Alkebuleum/bank.git/static/js/main.16b7b127.js",
+    "index.html": "/Alkebuleum/bank.git/index.html",
+    "main.09ea701b.css.map": "/Alkebuleum/bank.git/static/css/main.09ea701b.css.map",
+    "main.16b7b127.js.map": "/Alkebuleum/bank.git/static/js/main.16b7b127.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09ea701b.css",
+    "static/js/main.16b7b127.js"
+  ]
+}
